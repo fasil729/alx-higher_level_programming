@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    from calculator import add, sub, mul, div
+    from calculator_1 import add, sub, mul, div
     import sys
     args = sys.argv
     a = int(args[1])
@@ -11,16 +11,16 @@ if __name__ == "__main__":
         sys.exit(1)
     else:
         if op == "+":
-            print(f"{a} + {b} = {add(a, b)}") 
+            print("{} {} {} = {}".format(a, args[2], b, add(a, b)))
             sys.exit(0)
         elif op == "*":
-            print(f"{a}*{b}={mul(a, b)}") 
+            print("{} {} {} = {}".format(a, args[2], b, mul(a, b)))
             sys.exit(0)
         elif op == "-":
-            print(f"{a} - {b} = {sub(a, b)}") 
+            print("{} {} {} = {}".format(a, args[2], b, sub(a, b)))
             sys.exit(0)
         elif op == "/":
-            print(f"{a} / {b} = {div(a, b)}") 
+            print("{} {} {} = {}".format(a, args[2], b, div(a, b)))
             sys.exit(0)
         else:
             print("Unknown operator. Available operators: +, -, * and /")
