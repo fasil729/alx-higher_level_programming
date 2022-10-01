@@ -3,13 +3,13 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     import sys
     args = sys.argv
-    a = int(args[1])
-    b = int(args[3])
-    op = args[2]
     if len(args) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
     else:
+        a = int(args[1])
+        b = int(args[3])
+        op = args[2]
         if op == "+":
             print("{} {} {} = {}".format(a, args[2], b, add(a, b)))
             sys.exit(0)
