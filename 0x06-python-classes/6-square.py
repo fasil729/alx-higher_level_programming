@@ -24,9 +24,13 @@ class Square:
 
     @position.setter
     def position(self, value):
-        assert isinstance(value, tuple) and (value[0] >= 0 and value[1] >= 0),\
-                "position must be a tuple of 2 positive integers"
-        self.__position = value
+        try:
+            assert isinstance(value, tuple) and \
+                    (value[0] >= 0 and value[1] >= 0)
+            self.__position = value
+        except (IndexError, TypeError, AssertionError):
+            print("position must be a tuple of 2 positive integers")
+            exit(1)
 
     def area(self):
         """ retruns the current area """
