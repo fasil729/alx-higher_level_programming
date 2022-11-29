@@ -1,2 +1,2 @@
--- show the table description
-DESC first_table;
+-- show the full description of the table in the database
+SHOW CREATE TABLE first_table;
