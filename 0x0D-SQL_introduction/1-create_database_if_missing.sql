@@ -1,2 +1,2 @@
 -- create datbase if it is not exist
-IF NOT EXISTS CREATE database hbtn_0c_0
+IF NOT EXISTS CREATE database "hbtn_0c_0"
