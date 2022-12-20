@@ -11,6 +11,6 @@ while (num > 0) {
   for (let j = 0; j < i; j++) {
     temp += 'X';
   }
-  console.log(...temp);
+  console.log(temp);
   num--;
 }
