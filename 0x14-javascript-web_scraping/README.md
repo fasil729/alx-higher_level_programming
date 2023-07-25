@@ -77,4 +77,35 @@ If an error occurs while writing to the file, the error object will be printed t
 - Make sure that the file path and the string to write are enclosed in quotes if they contain spaces.
 - All files must be executable.
 
+# Task 2: Status Code
 
+This is a Node.js script that displays the status code of a GET request. It takes one argument, which is the URL to request.
+
+## Usage
+
+To use this script, run the following command in the terminal:
+
+```
+./2-statuscode.js <url>
+```
+
+Where `<url>` is the URL to request.
+
+Example:
+
+```
+./2-statuscode.js https://alx-intranet.hbtn.io/status
+```
+
+Output:
+
+```
+code: 200
+```
+
+If an error occurs while making the request, the error object will be printed to the console.
+
+## Note
+
+- Make sure to include the `http://` or `https://` protocol in the URL.
+- All files must be executable.
