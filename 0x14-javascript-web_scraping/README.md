@@ -43,3 +43,38 @@ $ ./0-readme.js doesntexist
   syscall: 'open',
   path: 'doesntexist' }
 ```
+
+# Task 1: File Writer
+
+This is a Node.js script that writes a string to a file. It takes two arguments, which are the file path and the string to write.
+
+## Usage
+
+To use this script, run the following command in the terminal:
+
+```
+./1-writeme.js <file-path> "<string-to-write>"
+```
+
+Where `<file-path>` is the path to the file you want to write to and `<string-to-write>` is the string you want to write.
+
+Example:
+
+```
+./1-writeme.js my_file.txt "Python is cool"
+```
+
+Output:
+
+```
+The file "my_file.txt" has been saved.
+```
+
+If an error occurs while writing to the file, the error object will be printed to the console.
+
+## Note
+
+- Make sure that the file path and the string to write are enclosed in quotes if they contain spaces.
+- All files must be executable.
+
+
