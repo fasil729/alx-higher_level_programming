@@ -177,4 +177,37 @@ If an error occurs while making the request, the error object will be printed to
 - The script uses the `reduce()` method to count the number of movies where "Wedge Antilles" is present.
 - All files must be executable.
 
+# Task 5: Loripsum
 
+This is a Node.js script that gets the contents of a webpage and stores it in a file.
+
+## Usage
+
+To use this script, run the following command in the terminal:
+
+```
+./5-request_store.js <url> <file-path>
+```
+
+Where `<url>` is the URL of the webpage to request and `<file-path>` is the file path to store the response.
+
+Example:
+
+```
+./5-request_store.js http://loripsum.net/api loripsum
+```
+
+Output:
+
+```
+<contents of the webpage>
+
+```
+
+If an error occurs while making the request or writing to the file system, the error object will be printed to the console.
+
+## Notes
+
+- The file must be UTF-8 encoded.
+- The `request()` function is used to make the HTTP request.
+- The `fs.writeFile()` function is used to write the response to the file system.
