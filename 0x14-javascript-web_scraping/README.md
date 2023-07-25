@@ -109,3 +109,38 @@ If an error occurs while making the request, the error object will be printed to
 
 - Make sure to include the `http://` or `https://` protocol in the URL.
 - All files must be executable.
+
+# Task 3: Star Wars Movie Title
+
+This is a Node.js script that prints the title of a Star Wars movie where the episode number matches a given integer. It takes one argument, which is the movie ID.
+
+## Usage
+
+To use this script, run the following command in the terminal:
+
+```
+./3-starwars_title.js <movie-id>
+```
+
+Where `<movie-id>` is the ID of the movie whose title you want to retrieve.
+
+Example:
+
+```
+./3-starwars_title.js 1
+```
+
+Output:
+
+```
+A New Hope
+```
+
+If an error occurs while making the request, the error object will be printed to the console.
+
+## Note
+
+- The Star Wars API is used to retrieve movie data. Make sure you have an internet connection when running this script.
+- All files must be executable.
+
+
