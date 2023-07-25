@@ -143,4 +143,38 @@ If an error occurs while making the request, the error object will be printed to
 - The Star Wars API is used to retrieve movie data. Make sure you have an internet connection when running this script.
 - All files must be executable.
 
+# Task 4: Star Wars Wedge Antilles
+
+This is a Node.js script that prints the number of movies where the character "Wedge Antilles" is present. It takes one argument, which is the API URL of the Star Wars API films endpoint.
+
+## Usage
+
+To use this script, run the following command in the terminal:
+
+```
+./4-starwars_count.js <api-url>
+```
+
+Where `<api-url>` is the URL of the Star Wars API films endpoint.
+
+Example:
+
+```
+./4-starwars_count.js https://swapi-api.alx-tools.com/api/films
+```
+
+Output:
+
+```
+3
+```
+
+If an error occurs while making the request, the error object will be printed to the console.
+
+## Note
+
+- The character ID for "Wedge Antilles" is hard-coded to 18.
+- The script uses the `reduce()` method to count the number of movies where "Wedge Antilles" is present.
+- All files must be executable.
+
 
