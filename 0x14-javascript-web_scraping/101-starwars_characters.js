@@ -22,7 +22,8 @@ request(apiUrl, { json: true }, (error, response, body) => {
       completedRequests++;
 
       if (completedRequests === characterUrls.length) {
-        console.log(characters.join('\n'));
+	const filteredStrings = characters.filter(str => str);
+        console.log(filteredStrings.join('\n'));
       }
     });
   });
