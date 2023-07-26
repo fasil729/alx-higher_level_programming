@@ -1,4 +1,4 @@
-k 0: File Reader
+## Task 0: File Reader
 
 This is a Node.js script that reads and prints the content of a file. 
 
@@ -211,3 +211,25 @@ If an error occurs while making the request or writing to the file system, the e
 - The file must be UTF-8 encoded.
 - The `request()` function is used to make the HTTP request.
 - The `fs.writeFile()` function is used to write the response to the file system.
+
+Here's the updated README for Task 6:
+
+# Task 6: Compute the Number of Completed Tasks by User ID
+
+This script computes the number of completed tasks by user id using the [request ↗](https://www.npmjs.com/package/request) module in Node.js. It takes the API URL as a command line argument and outputs a JSON object showing the number of completed tasks for each user id where at least one task was completed.
+
+To run the script, save it to a file (e.g. `6-completed_tasks.js`), make it executable (`chmod +x 6-completed_tasks.js`), and run it with the API URL as the first argument:
+
+```
+./6-completed_tasks.js <API_URL>
+```
+
+For example:
+
+```
+./6-completed_tasks.js https://jsonplaceholder.typicode.com/todos
+```
+
+This should output a JSON object showing the number of completed tasks for each user id where at least one task was completed.
+
+
