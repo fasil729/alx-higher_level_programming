@@ -212,7 +212,6 @@ If an error occurs while making the request or writing to the file system, the e
 - The `request()` function is used to make the HTTP request.
 - The `fs.writeFile()` function is used to write the response to the file system.
 
-Here's the updated README for Task 6:
 
 # Task 6: Compute the Number of Completed Tasks by User ID
 
@@ -232,4 +231,45 @@ For example:
 
 This should output a JSON object showing the number of completed tasks for each user id where at least one task was completed.
 
+Apologies for the confusion. Here's the prompt for Task 7:
 
+## Task 7: Print Characters of a Star Wars Movie
+
+Write a script that prints all characters of a Star Wars movie:
+
+- The first argument is the Movie ID - example: 3 = "Return of the Jedi"
+- Display one character name by line
+- You must use the Star Wars API
+- You must use the module `request`
+
+Example:
+
+```
+$ ./100-starwars_characters.js 3
+Darth Vader
+R2-D2
+Luke Skywalker
+Han Solo
+Leia Organa
+Chewbacca
+Palpatine
+Obi-Wan Kenobi
+Jabba Desilijic Tiure
+Wedge Antilles
+Yoda
+Boba Fett
+Ackbar
+Arvel Crynyd
+Mon Mothma
+Nien Nunb
+Wicket Systri Warrick
+Bib Fortuna
+C-3PO
+Lando Calrissian
+```
+
+Note: The output above is just an example. The characters you get depend on the movie ID you passed as argument.
+
+## Task 8: Print Characters of a Star Wars Movie in the Right Order
+
+This script prints all characters of a Star Wars movie using the Star Wars API, in the order of the list "characters" in the /films/ response. The movie ID is taken as a command line argument, and the character names are output one per line.
